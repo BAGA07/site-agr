@@ -4,7 +4,7 @@
         <ul class="nav">
             <li class="nav-item pt-3">
                 <a class="nav-link d-block" href="index.html">
-                    <img class="sidebar-brand-logo" src="{{asset('assets_PlusAdmin/images/logo.svg')}}" alt="" />
+                    <img class="sidebar-brand-logo" src="{{asset('assets/img/logo/logo.png')}}" alt="" style="max-width: 80px;"/>
                     <img class="sidebar-brand-logomini" src="{{asset('assets_PlusAdmin/images/logo-mini.svg')}}"
                         alt="" />
                     <div class="small font-weight-light pt-1">Agro-busness</div>
@@ -37,7 +37,7 @@
                 <div class="collapse" id="ui-basic">
                     <ul class="nav flex-column sub-menu">
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/ui-features/buttons.html" wire:click()>Buttons</a>
+                            <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/ui-features/dropdowns.html">Liste | Produits</a>
@@ -58,7 +58,7 @@
                 <div class="collapse" id="ui-basic1">
                     <ul class="nav flex-column sub-menu">
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/ui-features/buttons.html" wire:click()>Buttons</a>
+                            <a class="nav-link" href="pages/ui-features/buttons.html" >Buttons</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a>

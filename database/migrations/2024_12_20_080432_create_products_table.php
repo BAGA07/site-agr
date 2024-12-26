@@ -19,13 +19,12 @@ return new class extends Migration
             $table->integer('stock')->default(0); // Quantité en stock
             $table->string('image_path')->nullable(); // Chemin de l'image
             $table->timestamps();
-            
-            /* $table->unsignedBigInteger('category_id'); // Liaison avec une catégorie
+            $table->unsignedBigInteger('category_id')->nullable(); // Liaison avec une catégorie
 
             
             //Cles etrangere
             $table->foreign('category_id')->references('id')->on('category')->onDelete('cascade');
-         */});
+         });
     }
 
     /**
@@ -34,5 +33,6 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('products');
+        
     }
 };

@@ -16,11 +16,16 @@ class Product extends Model
         'price',
         'stock',
         'image_path',
-        
-    ];
 
-    // Relation avec le modèle Category (Un produit appartient à une catégorie)
-   
+    ];
+    //Recuperation de tous les produits
+      public function showProducts()
+    {
+        $products = Product::all();
+        return view('welcome');
+    } 
+
+
 
     // Exemple de méthode pour vérifier si un produit est en stock
     public function isInStock()
@@ -42,9 +47,13 @@ class Product extends Model
             $this->save();
         }
     }
-
-     public function orderItems()
+    // Les relation entre les tables
+    public function orderItems()
     {
         return $this->hasMany(OrderItem::class);
+    }
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
     }
 }
